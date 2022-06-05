@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('/fonts/montserrat-v24-latin/montserrat-v24-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('/fonts/montserrat-v24-latin/montserrat-v24-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    src: local(''),
+         url('/fonts/montserrat-v24-latin/montserrat-v24-latin-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('/fonts/montserrat-v24-latin/montserrat-v24-latin-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+body {
+    font-family: 'Montserrat';
+    background: #E5E5E5;
+}
+.head, .content {
+    display: flex;
+    justify-content: center;
+}
+.date {
+    font-size: 12px;
+}
+.inputField {
+    background: #F2F2F2;
+    width: 50%;
+    font-size: 20px;
+    height: 40px;
+    border-radius: 7px;
+    border: 1px solid black;
+    outline: none;
+    margin: 0 10px 0;
+    color: #999999;
+    text-align: center;
+}
+.btn {
+    background: #F2F2F2;
+    border-radius: 7px;
+    border: 1px solid #000;
+    color: #000;
+    padding: 10px;
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+.btn:hover {
+    background: #999999;
+
+}
+.content {
+    margin: 0 0 20px;
+}
+.listContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.itemContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 0 10px;
+}
+.itemDone {
+    text-decoration: line-through;
+}
+.trash {
+    background-image: url(bin.png);  
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20px;
+    height: 20px;
+    background-size: contain; 
+}
+.trashInvisible {
+    display: none;
+}
+label {
+    margin: 0 20px;
+}
+
+@media all and (max-width: 630px) {
+    .header {
+        font-size: 25px;
+    }
+}
+
+@media all and (max-width: 500px) {
+    .header {
+        font-size: 23px;
+    }
+}
