@@ -93,4 +93,11 @@ label {
     .header {
         font-size: 23px;
     }
+    .head {
+        flex-direction: column;
+        text-align: center;
+    }
+    .date {
+        padding: 0 0 5px;
+    }
 }
